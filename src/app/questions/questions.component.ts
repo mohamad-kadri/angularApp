@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { questions } from '../questions';
 import { MatDialog } from '@angular/material/dialog';
-import { QuestionDetailsComponent } from '../question-details/question-details.component';
 import { QuestionDetailsDialogComponent } from '../question-details-dialog/question-details-dialog.component';
 
 @Component({
@@ -10,7 +9,7 @@ import { QuestionDetailsDialogComponent } from '../question-details-dialog/quest
   styleUrls: ['./questions.component.css']
 })
 export class QuestionsComponent implements OnInit {
-  questionsList;
+  questionsList:any;
   constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {

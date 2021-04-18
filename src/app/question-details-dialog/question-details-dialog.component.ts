@@ -1,5 +1,5 @@
 import { Component, OnInit, Inject } from '@angular/core';
-import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { questions } from '../questions';
 
 @Component({
@@ -8,8 +8,8 @@ import { questions } from '../questions';
   styleUrls: ['./question-details-dialog.component.css']
 })
 export class QuestionDetailsDialogComponent implements OnInit {
-  question;
   questionId;
+  question;
   constructor(@Inject(MAT_DIALOG_DATA) public data: any) {
     this.questionId = data.questionId;
   }
