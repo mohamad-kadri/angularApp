@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { features } from '../features';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  features:any;
   constructor() { }
 
   ngOnInit(): void {
+    this.features = features;
   }
 
 }

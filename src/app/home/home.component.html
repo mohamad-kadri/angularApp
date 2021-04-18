@@ -1,2 +1,20 @@
 <h1>Welcome to Ecomz</h1>
-<p>This application is designed to let you know more about Ecomz.</p>
+
+<div class="row">
+  <div class="col-md-4" *ngFor="let item of features">
+    <mat-card class="example-card">
+      <img mat-card-image src="assets/images/{{item.picture}}" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>
+          {{item.title}}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+
+

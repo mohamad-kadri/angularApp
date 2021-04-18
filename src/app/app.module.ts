@@ -13,6 +13,7 @@ import { QuestionDetailsComponent } from './question-details/question-details.co
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatCardModule } from '@angular/material/card';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { QuestionDetailsDialogComponent } from './question-details-dialog/question-details-dialog.component';
 
@@ -32,6 +33,7 @@ import { QuestionDetailsDialogComponent } from './question-details-dialog/questi
     MatExpansionModule,
     MatButtonModule,
     MatDialogModule,
+    MatCardModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
       { path: 'questions', component: QuestionsComponent },
